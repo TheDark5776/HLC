@@ -3,11 +3,11 @@ services:
  postgresdb:
   image: busybox
   volumes:
-    - ./ex:/var/lib/postgresql/data
+    - "./ex:/var/lib/postgresql/data"
 
  postgres:
   name: postgres
-  image: postgres:lastest
+  image: postgres
   hostname: postgres
   volumes_from:
     - postgresdb
