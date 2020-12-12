@@ -1,9 +1,11 @@
-postgresdb:
+version: '2'
+services:
+ postgresdb:
   image: busybox
   volumes:
     - ./ex:/var/lib/postgresql/data
 
-postgres:
+ postgres:
   name: postgres
   image: postgres:lastest
   hostname: postgres
